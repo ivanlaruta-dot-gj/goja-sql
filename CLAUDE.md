@@ -32,6 +32,7 @@ Las queries se **ejecutan en DBeaver / DataGrip**; aquí se escriben, versionan 
 - CTEs con nombre descriptivo (lo que *contienen*), nunca subqueries; última CTE `final`.
 - Nunca `SELECT *` en queries que alimentan reportes.
 - Referencia objetos siempre como `esquema.tabla`.
+- El formato lo valida SQLFluff (`.sqlfluff`).
 - Archivos: `dominio_tema_detalle.sql` (ej. `tiktok_ventas_por_creador.sql`).
 - Encabezado obligatorio:
   ```sql
@@ -43,7 +44,12 @@ Las queries se **ejecutan en DBeaver / DataGrip**; aquí se escriben, versionan 
   -- Notas     : ...
   ```
 
+## Idioma
+- Este es un repo **personal**: archivos, comentarios y documentación en **español**.
+- Todo lo destinado a repos **oficiales** de GOJA (nexus, dbt, DAGs, PRs, tickets, docs del equipo)
+  se escribe en **inglés**.
+- Nombres de objetos (tablas, columnas, modelos) siempre tal cual existen.
+
 ## Forma de trabajar
-- Responde en español; nombres de objetos tal cual existen.
 - Una sesión = una tarea. Si cambia el tema, sugiere `/clear`.
 - Nueva query → en la carpeta del dominio correcto (crea la carpeta si no existe).

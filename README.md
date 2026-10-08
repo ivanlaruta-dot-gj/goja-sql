@@ -15,16 +15,12 @@ Workspace SQL de Ivan Laruta (Analytics, GOJA): queries, exploración de lineaje
 ### 1. Git + GitHub (en PowerShell)
 Remoto: https://github.com/ivanlaruta-dot-gj/goja-sql (privado)
 ```powershell
-cd "$env:USERPROFILE\Downloads\GOJA\DataTeam\goja-sql"
-git init
-git add .
-git status          # revisar que no haya credenciales ni CSVs
-git commit -m "Estructura inicial del workspace SQL"
-git branch -M main
-git remote add origin https://github.com/ivanlaruta-dot-gj/goja-sql.git
-git push -u origin main
+cd "$env:USERPROFILE\Downloads\GOJA IT\DataTeam\goja-sql"
+git config user.name "Ivan Laruta"
+git config user.email "ivan.laruta@goja.com"
+git remote set-url origin https://ivanlaruta-dot-gj@github.com/ivanlaruta-dot-gj/goja-sql.git
 ```
-Día a día: `git add .` → `git commit -m "..."` → `git push`.
+Día a día: `git add -A` → `git commit -m "..."` → `git push`.
 
 ### 2. DBeaver
 Vista **Projects** → clic derecho en **Scripts** → **Create → Link Folder** → elegir `goja-sql`.
@@ -33,7 +29,13 @@ Al abrir un `.sql`, asignar la conexión (Ctrl+9).
 ### 2b. DataGrip (alternativa)
 Ventana **Files** → **Attach Directory to Project** → `goja-sql`.
 
-### 3. Mantener nexus actualizado
+### 3. SQLFluff (formato, mismas reglas que el equipo)
+```powershell
+pip install sqlfluff
+```
+Extensión VS Code: `dorzey.vscode-sqlfluff`. Revisa al guardar; formatear con `Shift+Alt+F`.
+
+### 4. Mantener nexus actualizado
 ```powershell
 cd "$env:USERPROFILE\Downloads\GOJA Bitbucket\nexus"
 git pull
@@ -41,7 +43,7 @@ git pull
 
 ## Uso diario con Claude Code
 ```powershell
-cd "$env:USERPROFILE\Downloads\GOJA\DataTeam\goja-sql"
+cd "$env:USERPROFILE\Downloads\GOJA IT\DataTeam\goja-sql"
 claude
 ```
 | Comando | Para qué |
