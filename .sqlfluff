@@ -1,0 +1,8 @@
+# Basado en nexus/.sqlfluff (convenciones del equipo), adaptado a SQL plano (sin dbt/jinja)
+[sqlfluff]
+dialect = postgres
+templater = raw
+max_line_length = 150
+
+[sqlfluff:rules:capitalisation.keywords]
+capitalisation_policy = upper

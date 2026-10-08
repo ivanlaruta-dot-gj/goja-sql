@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "C:/Users/IvanLaruta/Downloads/GOJA Bitbucket/nexus"
+    ],
+    "deny": [
+      "Bash(git push:*)"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+# Credenciales
+.env
+*.env
+.mcp.json
+
+# Resultados / datos exportados
+*.csv
+*.xlsx
+*.parquet
+results/
+exports/
+
+# DataGrip
+.idea/dataSources.local.xml
+.idea/workspace.xml
+.idea/dataSources/
+
+# DBeaver
+.dbeaver/credentials-config.json
+
+# Claude (configuración personal local)
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Sistema
+Thumbs.db
+.DS_Store
