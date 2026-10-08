@@ -11,7 +11,13 @@ Las queries se **ejecutan en DBeaver / DataGrip**; aquí se escriben, versionan 
   - `dwh/models/` → dbt: `staging/` → `intermediate/` → `marts/`
   - `dwh/migrations/` → DDL versionado
   - `.claude/rules/sql-conventions.md` → convenciones SQL del equipo
-- **Base de datos**: PostgreSQL. Solo `SELECT`. Preferir dev. Nunca DDL/DML.
+- **Base de datos** (PostgreSQL, solo lectura): `postgres-dev`, `postgres-prod`, `postgres-dev-datacron`,
+  `postgres-operations`, `postgres-cube-local`. Solo `SELECT`, nunca DDL/DML.
+  - Los nombres son **históricos/referenciales** (así se conocen en IT): "dev" y "prod" **no** significan
+    desarrollo y producción. No asumas qué contiene cada una por su nombre.
+  - Si no sabes en cuál vive un objeto, búscalo en las conexiones (ver `catalog/buscar_tabla.sql`)
+    o revisa `knowledge/conexiones.md`.
+  - Indica siempre qué conexión usaste.
 
 ## Base de conocimiento — REGLA PRINCIPAL
 1. Antes de investigar una tabla, métrica o lineaje, lee `knowledge/INDEX.md`.

@@ -2,6 +2,8 @@
 
 Revisar aquí ANTES de investigar. Actualizar al documentar algo nuevo.
 
+- [conexiones.md](conexiones.md) — qué contiene cada conexión a BD (los nombres son históricos)
+
 ## Lineage
 | Tabla / objeto | Archivo | Última verificación |
 |---|---|---|
