@@ -13,7 +13,7 @@ Workspace SQL de Ivan Laruta (Analytics, GOJA): queries, exploración de lineaje
 ## Setup (una sola vez)
 
 ### 1. Git + GitHub (en PowerShell)
-Remoto: https://github.com/ivanlaruta-dot-gj/ivan_datateam (privado)
+Remoto: https://github.com/ivanlaruta-dot-gj/goja-sql (privado)
 ```powershell
 cd "$env:USERPROFILE\Downloads\GOJA\DataTeam\goja-sql"
 git init
@@ -21,7 +21,7 @@ git add .
 git status          # revisar que no haya credenciales ni CSVs
 git commit -m "Estructura inicial del workspace SQL"
 git branch -M main
-git remote add origin https://github.com/ivanlaruta-dot-gj/ivan_datateam.git
+git remote add origin https://github.com/ivanlaruta-dot-gj/goja-sql.git
 git push -u origin main
 ```
 Día a día: `git add .` → `git commit -m "..."` → `git push`.
