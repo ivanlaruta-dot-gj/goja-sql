@@ -66,6 +66,7 @@ goja-sql/
 │   ├── settings.json      acceso de lectura al repo nexus
 │   └── commands/          /lineage, /documentar
 ├── tiktok/                queries + CLAUDE.md del dominio
+├── golden-model/          export GM → Postgres (scripts, limpiezas) + CLAUDE.md
 ├── adhoc/                 exploración (YYYY-MM-DD_tema.sql)
 ├── catalog/               queries para explorar la BD
 └── knowledge/
@@ -73,6 +74,7 @@ goja-sql/
     ├── lineage/           de dónde viene cada tabla
     ├── hallazgos/         problemas encontrados y cómo se resolvieron
     ├── lineamientos/      reglas acordadas
+    ├── procesos/          runbooks de cambios (pasos, validación, rollback, bitácora)
     └── _plantillas/
 ```
-Nuevos dominios (`amazon/`, `nexus/`, `golden-model/`...) se crean cuando haga falta.
+Nuevos dominios (`amazon/`, `nexus/`...) se crean cuando haga falta.

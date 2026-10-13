@@ -5,10 +5,10 @@ Completar a medida que se descubra qué contiene cada una.
 
 | Conexión | Qué contiene realmente | Esquemas clave | Notas |
 |---|---|---|---|
-| postgres-prod | _(por documentar)_ | | Solo lectura |
-| postgres-dev | _(por documentar)_ | | En el datapool dev, Ivan es dueño solo de `pbireport` |
-| postgres-dev-datacron | _(por documentar)_ | | |
+| postgres-prod | BD `datapool` _(contenido por documentar)_ | `analytics` existe | Solo lectura. `analytics.gm_main_metrics_by_day_v2` NO está aquí (2026-10-12) |
+| postgres-dev | BD `datapool` _(contenido por documentar)_ | | En el datapool dev, Ivan es dueño solo de `pbireport`. `analytics.gm_main_metrics_by_day_v2` NO está aquí (2026-10-12) |
+| postgres-dev-datacron | BD `datacron` _(contenido por documentar)_ | | `analytics.gm_main_metrics_by_day_v2` NO está aquí (2026-10-12) |
 | postgres-operations | _(por documentar)_ | | |
 | postgres-cube-local | _(por documentar)_ | | |
 
-**Última verificación:** _(pendiente)_
+**Última verificación:** 2026-10-12 (solo nombre de BD por conexión)
